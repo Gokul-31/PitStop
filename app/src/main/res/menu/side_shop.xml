@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/SP_myshop"
+            android:icon="@drawable/ic_myshop"
+            android:title="@string/my_shop"/>
+        <item
+            android:id="@+id/SP_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"/>
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+<!--        <item-->
+<!--            android:id="@+id/SP_account"-->
+<!--            android:icon="@drawable/ic_baseline_account_circle_24"-->
+<!--            android:title="@string/MyAccount"/>-->
+        <item
+        android:id="@+id/SP_signout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/signout"/>
+        </menu>
+    </item>
+</menu>

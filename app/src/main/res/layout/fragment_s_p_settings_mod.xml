@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".shop.SP_settingsModFrag">
+
+    <TextView
+        android:id="@+id/st_timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/time_interval_for_each_customer"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/st_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/st_timeText"
+        app:layout_constraintStart_toEndOf="@+id/st_timeText" />
+
+    <TextView
+        android:id="@+id/st_startText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/shop_start_time"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/st_timeText"
+        app:layout_constraintTop_toBottomOf="@+id/st_timeText" />
+
+    <TextView
+        android:id="@+id/st_endText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/shop_end_time"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/st_startText"
+        app:layout_constraintTop_toBottomOf="@+id/st_startText" />
+
+    <TextView
+        android:id="@+id/st_interval_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/slots"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/st_endText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/st_recycle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/st_set"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/st_interval_title" />
+
+    <Button
+        android:id="@+id/st_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Calculate"
+        android:padding="12dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/press_to_remove_slot"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/st_interval_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/st_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/st_startText"
+        app:layout_constraintStart_toEndOf="@+id/st_startText" />
+
+    <Spinner
+        android:id="@+id/st_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/st_endText"
+        app:layout_constraintStart_toEndOf="@+id/st_endText" />
+
+    <Spinner
+        android:id="@+id/st_start_apm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/st_start_time"
+        app:layout_constraintStart_toEndOf="@+id/st_start_time" />
+
+    <Spinner
+        android:id="@+id/st_end_apm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/st_end_time"
+        app:layout_constraintStart_toEndOf="@+id/st_end_time" />
+
+    <Button
+        android:id="@+id/st_finalset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Set"
+        android:padding="12dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintBottom_toBottomOf="@+id/st_set"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

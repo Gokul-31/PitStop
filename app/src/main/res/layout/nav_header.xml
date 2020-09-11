@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/nav_menu_header_bg1"
+    android:layout_width="match_parent"
+    android:layout_height="176dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:paddingStart="8dp"
+        android:paddingBottom="0dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/head_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:paddingStart="8dp"
+        android:paddingBottom="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFC107"/>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

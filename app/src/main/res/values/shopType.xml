@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shopType">
+        <item>Grocery</item>
+        <item>Bakery</item>
+        <item>Saloon</item>
+        <item>Pharmacy</item>
+    </string-array>
+</resources>
