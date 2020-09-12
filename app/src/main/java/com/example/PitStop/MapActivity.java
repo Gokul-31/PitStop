@@ -90,7 +90,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                             Log.e(TAG, "onComplete: loc found");
                             Location currentLocation=(Location) task.getResult();
 
-                            assert currentLocation != null;
+                            if(currentLocation==null){
+                                Toast.makeText(getApplicationContext(),"Some error has occured",Toast.LENGTH_SHORT).show();
+                                return;
+                            }
                             myLoc= new LatLng(currentLocation.getLatitude(),currentLocation.getLongitude());
                             MoveCamera(myLoc,DEF_ZOOM);
                             m = new MarkerOptions().position(myLoc).draggable(true);

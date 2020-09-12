@@ -127,9 +127,9 @@ public class SignIn2 extends AppCompatActivity {
                 else if(!pass.equals(rePass)){
                     rePassEt.setError("Password mismatch");
                 }
-                else if(!locSelect){
-                    Toast.makeText(getApplicationContext(),"Should Select Location",Toast.LENGTH_SHORT).show();
-                }
+//                else if(!locSelect){
+//                    Toast.makeText(getApplicationContext(),"Should Select Location",Toast.LENGTH_SHORT).show();
+//                }
                 else{
                     checkAlreadyUse();
                 }
